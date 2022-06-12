@@ -1,7 +1,5 @@
 {% extends "base.html" %}
-
 {% block title %}Log-in{% endblock %}
-
 {% block content %}
 <h1>Log-in</h1>
 {% if form.errors %}
@@ -10,8 +8,7 @@
     Please try again.
 </p>
 {% else %}
-<p>Please, use the following form to log-in. If you don't have an account <a href="{% url " register" %}">register
-        here</a></p>
+<p>Please, use the following form to log-in:</p>
 {% endif %}
 <div class="login-form">
     <form action="{% url 'login' %}" method="post">
